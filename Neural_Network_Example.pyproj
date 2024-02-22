@@ -1,0 +1,45 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>f6187493-be54-4fab-8c69-efb5511aea2a</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Multi_layers_Recognize_cat_dog.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Neural_Network_Example</Name>
+    <RootNamespace>Neural_Network_Example</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Multi_layers_Modele.py" />
+    <Compile Include="Multi_layers_network.py" />
+    <Compile Include="Two_layers_Modele.py" />
+    <Compile Include="Multi_layers_Recognize_cat_dog.py" />
+    <Compile Include="Two_layers_Recognize_cat_dog.py" />
+    <Compile Include="Two_layers_network.py" />
+    <Compile Include="single_layer_network.py" />
+    <Compile Include="Single_layer_Modele.py" />
+    <Compile Include="Sigle_layer_Recognize_cat_dog.py" />
+    <Compile Include="Single_layer_Test_normalisation_data.py" />
+    <Compile Include="utilities.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
