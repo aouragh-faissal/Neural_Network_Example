@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f6187493-be54-4fab-8c69-efb5511aea2a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Multi_layers_Recognize_cat_dog.py</StartupFile>
+    <StartupFile>single_layer_network.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>

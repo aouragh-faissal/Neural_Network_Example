@@ -32,7 +32,7 @@ plt.show()
 #################################################################################
 # visualisation 3D
 #################################################################################
-"""
+
 fig = go.Figure(data=[go.Scatter3d( 
     x=X[:, 0].flatten(),
     y=X[:, 1].flatten(),
@@ -68,7 +68,7 @@ fig.add_scatter3d(x=X[:, 0].flatten(), y=X[:, 1].flatten(), z=y.flatten(), mode=
 fig.update_layout(template= "plotly_dark", margin=dict(l=0, r=0, b=0, t=0))
 fig.layout.scene.camera.projection.type = "orthographic"
 fig.show()
-"""
+
 
     
 
